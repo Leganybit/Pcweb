@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <meta charset='utf-8'>
+    <meta name='viewport' content = 'width=devicewidth, initial-scale=1.0'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <!-- Css de acordeon menú -->
+    <link href="/(directory)/accordion-menu.css" rel="stylesheet" type="text/css" />
+    <script src="/(directory)/accordion-menu.js" type="text/javascript"></script>
+
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+
+<body class="bg-primary">
+
+  <div class="bg-light bg-gradient">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient">
+      <div class="container-fluid">
+
+        <!-- logo para ir a inicio -->
+        <div>
+        <a class="navbar-brand" href="/"><img src="/static/img/webpc.png" class="card-img-top" width="100" height="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/bitcoin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Basic
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/basic/mi_primer_pc">Mi primer PC</a></li>
+                <li><a class="dropdown-item" href="/basic/low_cost">Low cost</a></li>
+                <li><a class="dropdown-item" href="/basic/medium">Medium</a></li>
+                <li><a class="dropdown-item" href="/basic/hight_performance">Hight performance</a></li>
+                <li><a class="dropdown-item" href="/basic/extreme">Extreme</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/bitcoin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gamer
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/gamer/low_cost">Low cost</a></li>
+                <li><a class="dropdown-item" href="/gamer/medium">Medium</a></li>
+                <li><a class="dropdown-item" href="/gamer/hight_performance">Hight performance</a></li>
+                <li><a class="dropdown-item" href="/gamer/extreme">Extreme</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/bitcoin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Workstation
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/workstation/low_cost">Low cost</a></li>
+                <li><a class="dropdown-item" href="/workstation/medium">Medium</a></li>
+                <li><a class="dropdown-item" href="/workstation/hight_performance">Hight performance</a></li>
+                <li><a class="dropdown-item" href="/workstation/extreme">Extreme</a></li>
+              </ul>
+            </li>
+<!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/bitcoin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Componentes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/componentes/procesadores">Procesadores</a></li>
+                <li><a class="dropdown-item" href="/componentes/rams">Rams</a></li>
+                <li><a class="dropdown-item" href="/componentes/tarjeta_grafica">Tarjetas gráficas</a></li>
+                <li><a class="dropdown-item" href="/componentes/disco_duro">Discos duros</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/bitcoin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Complementos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/complementos/raton">Raton</a></li>
+                <li><a class="dropdown-item" href="/complementos/teclado">Keyboards</a></li>
+                <li><a class="dropdown-item" href="/complementos/cables">Cables</a></li>
+                <li><a class="dropdown-item" href="/complementos/monitores">Monitores</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto">Contacto</a>
+            </li>
+-->
+            <li class="nav-item">
+              <a class="nav-link justify-content-end" href="/contacto">Contacto</a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Carrito
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Su compra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Cosas que he comprado
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Pagar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    </div>
+  </div>
+
+</body>
+
+  <div id="content">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+
+
+</html>
