@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Low cost{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+        .myh3 {
+          text-align: center;
+          padding-top: 30px;
+          color: white;
+          text-decoration: underline;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h3 class="myh3">Low cost computers</h3>
+    <div class="row justify-content-around">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/basic/lowcost/ryzen3.png" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">265€</h5>
+              <p class="card-text">Ryzen 3 3100, 500gb, 8gb RAM.</p>
+              <a target="_blank" class="btn btn-primary" href="/basic/low_cost/ryzen3">Ver pc</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/basic/lowcost/i3.jpeg" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">479€</h5>
+              <p class="card-text">i3 12100, 480gb SSD, 8gb RAM.</p>
+              <a target="_blank" class="btn btn-primary" href="...">Ver pc</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/webpc.png" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">pc3</h5>
+              <p class="card-text">Descripción básica</p>
+              <a target="_blank" class="btn btn-primary" href="...">Ver pc</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/webpc.png" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">pc4</h5>
+              <p class="card-text">Descripción básica</p>
+              <a target="_blank" class="btn btn-primary" href="...">Ver pc</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/webpc.png" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">pc5</h5>
+              <p class="card-text">Descripción básica</p>
+              <a target="_blank" class="btn btn-primary" href="...">Ver pc</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-black bg-light mb-3">
+            <img src="../static/img/webpc.png" class="card-img-top" width="200" height="400">
+            <div class="card-body">
+              <h5 class="card-title">pc6</h5>
+              <p class="card-text">Descripción básica</p>
+              <a target="_blank" class="btn btn-primary" href="...">Ver pc</a>
+            </div>
+          </div>
+        </div>
+                                       
+
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

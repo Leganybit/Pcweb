@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Low cost{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+        .card-text {
+          text-align: center;
+        }
+        .card-title {
+          text-align: none;
+          text-decoration: underline solid black;
+        }
+        .img-fluid {
+          margin-left: 100px;
+          border-right: solid black 1px;
+          padding: 20px;
+        }
+        .col-md-8 {
+          padding: 50px;
+          padding-left: 300px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<br>
+  <div class="container">
+    
+    <div class="card mb-3" style="max-width: 1400px;">
+      <div class="row g-0">
+
+        <div class="col-md-4">
+          <img src="../../static/img/basic/lowcost/ryzen3.png" class="img-fluid rounded-start" alt="...">
+        </div>
+
+        <div class="col-md-8">
+          <div class="my-description">
+            <dl class="row">
+              <h5 class="card-title">265€</h5>
+              <dt class="col-sm-3">Procesador:</dt>
+              <dd class="col-sm-9">Ryzen 3 3100</dd>
+
+              <dt class="col-sm-3">Disco duro:</dt>
+              <dd class="col-sm-9">
+                <p>M.2 500Gb</p>
+              </dd>
+
+              <dt class="col-sm-3">RAM:</dt>
+              <dd class="col-sm-9">DDR4 8Gb</dd>
+
+              <dt class="col-sm-3 text-truncate">Alimentación:</dt>
+              <dd class="col-sm-9">500w 80+</dd>
+
+              <dt class="col-sm-3">Placa base:</dt>
+              <dd class="col-sm-9">
+                <dl class="row">
+                  <dd class="col-sm-8">A320M-A pro M2</dd>
+                </dl>
+              </dd>
+            </dl>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
