@@ -37,18 +37,33 @@
         <div class="col-md-8">
           <div class="my-description">
             <dl class="row">
-              <h5 class="card-title">265€</h5>
+              <h5 class="card-title">    
+              {% for i in primer_ordena %}
+                {{i['precio']}}
+              {% endfor %}</h5>
               <dt class="col-sm-3">Procesador:</dt>
-              <dd class="col-sm-9">Ryzen 3 3100</dd>
+              <dd class="col-sm-9">
+              {% for i in primer_ordena %}
+                {{i['procesador']}}
+              {% endfor %}
+              </dd>
 
               <dt class="col-sm-3">Disco duro:</dt>
               <dd class="col-sm-9">
-                <p>M.2 500Gb</p>
+                <p>
+              {% for i in primer_ordena %}
+                {{i['disco_duro']}}
+              {% endfor %}                  
+                </p>
               </dd>
 
               <dt class="col-sm-3">RAM:</dt>
-              <dd class="col-sm-9">DDR4 8Gb</dd>
-
+              <dd class="col-sm-9">
+              {% for i in primer_ordena %}
+                {{i['ram']}}
+              {% endfor %}
+              </dd>
+<!--
               <dt class="col-sm-3 text-truncate">Alimentación:</dt>
               <dd class="col-sm-9">500w 80+</dd>
 
@@ -58,6 +73,7 @@
                   <dd class="col-sm-8">A320M-A pro M2</dd>
                 </dl>
               </dd>
+-->
             </dl>
           </div>
 

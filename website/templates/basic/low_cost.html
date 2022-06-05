@@ -16,6 +16,9 @@
 {% block content %}
   <div class="container">
     <h3 class="myh3">Low cost computers</h3>
+    {% for i in primer_ordena %}
+      {{i['nombre']}}{{i['precio']}}{{i['procesador']}}
+    {% endfor %}
     <div class="row justify-content-around">
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
